@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>华制诊断云体验版</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+<script>
+  document.body.addEventListener('touchstart', function () {});
+  //  document.body.addEventListener('touchmove' , function(e){ e.preventDefault(); })
+  document.querySelector('body').addEventListener('touchmove', function (e) {
+    if (!document.querySelector('.questionWarp').contains(e.target)) {
+      e.preventDefault();
+    }
+  })
+
+</script>
+
+</html>
