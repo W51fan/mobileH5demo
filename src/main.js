@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Vuetify from 'vuetify'
+import Axios from "axios";
 import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
 // import '~vuetify/src/stylus/main' // Ensure you are using stylus-loader
 // import 'material-design-icons-iconfont/dist/material-design-icons.css' // Ensure you are using css-loader
@@ -11,6 +12,7 @@ import Echarts from "echarts";
 Vue.use(Vuetify)
 Vue.config.productionTip = false
 Vue.prototype.$echarts = Echarts;
+Vue.prototype.$http = Axios;
 
 /* eslint-disable no-new */
 new Vue({

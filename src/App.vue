@@ -1,12 +1,15 @@
 <template>
-  <div id="app">
+<div id="app">
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: "App"
+  name: "App",
+  created: function() {
+    // document.body.removeChild(document.getElementById("Loading"));
+  }
 };
 </script>
 
@@ -19,7 +22,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   /* z-index: -10; */
   background-image: url("/static/imgs/bg_1.jpg");
   background-repeat: no-repeat;
