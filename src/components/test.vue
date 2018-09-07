@@ -170,7 +170,7 @@ export default {
         }
         setTimeout(() => {
           $this.isfadeIn = false;
-        }, 500);
+        }, 200);
       } else {
         this.isfadeBack = true;
         if (this.currentQuestion == 1) return;
@@ -188,7 +188,7 @@ export default {
           ) * 100;
         setTimeout(() => {
           $this.isfadeBack = false;
-        }, 500);
+        }, 200);
       }
     },
     sendscoreArray() {
@@ -410,7 +410,7 @@ export default {
 @keyframes fade-in {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(300px);
   } /*初始状态 透明度为0*/
   100% {
     opacity: 1;
@@ -421,7 +421,7 @@ export default {
   /*针对webkit内核*/
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(300px);
   }
   100% {
     opacity: 1;
@@ -431,15 +431,15 @@ export default {
 
 .fadeIn {
   animation: fade-in; /*动画名称*/
-  animation-duration: 0.5s; /*动画持续时间*/
-  -webkit-animation: fade-in 0.5s; /*针对webkit内核*/
+  animation-duration: 0.2s; /*动画持续时间*/
+  -webkit-animation: fade-in 0.2s; /*针对webkit内核*/
   animation-timing-function:linear;
 }
 
 @keyframes fade-back {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-300px);
   } /*初始状态 透明度为0*/
   100% {
     opacity: 1;
@@ -450,7 +450,7 @@ export default {
   /*针对webkit内核*/
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-300px);
   }
   100% {
     opacity: 1;
@@ -459,8 +459,8 @@ export default {
 }
 .fadeBack {
   animation: fade-back; /*动画名称*/
-  animation-duration: 0.5s; /*动画持续时间*/
-  -webkit-animation: fade-back 0.5s; /*针对webkit内核*/
+  animation-duration: 0.2s; /*动画持续时间*/
+  -webkit-animation: fade-back 0.2s; /*针对webkit内核*/
 }
 </style>
 

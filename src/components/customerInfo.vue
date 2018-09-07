@@ -6,14 +6,14 @@
             <div>您的姓名：</div>
             <input class="inputName  infoInput" v-model="name" type="text" maxlength="16" placeholder="请输入您的名字"/>
         </div>
-        <div style="color:red;margin-left: -60px;">
+        <div class="nameErrText">
             <div v-if="namehasErr">{{namehasErrText}}</div>
         </div>
         <div class="infoInputWarp">
              <div>联系电话：</div>
             <input class="inputName infoInput" v-model="mobile" type="text"  placeholder="请输入您的手机号码" v-on:change="checkMobile()"/>
         </div>
-        <div style="color:red;margin-left: -38px;">
+        <div class="mobileErrText">
             <div v-if="mobilehasErr">{{mobilehasErrText}}</div>
         </div>
         <div class="infoInputWarp">
@@ -24,14 +24,14 @@
                 <div v-else  class="getVerCode" :class="{activeVerBtn:isGetCode}">重新获取<span style="color:yellow">{{time}}</span>s</div>
             </div>
         </div>
-        <div style="color:red;margin-left: -55px;">
+        <div class="verCodeErrText">
             <div v-if="verCodehasErr">{{verCodehasErrText}}</div>
         </div>
         <div class="infoInputWarp">
              <div>企业名称：</div>
             <input class="inputName infoInput" v-model="enterpriseName" type="text" maxlength="16" placeholder="请输入您的企业名称"/>
         </div>
-        <div style="color:red;margin-left: -40px;">
+        <div class="enterpriseNameErrText">
             <div v-if="enterpriseNamehasErr">{{enterpriseNamehasErrText}}</div>
         </div>
         <div>
@@ -306,7 +306,7 @@ textarea:-ms-input-placeholder {
 </style>
 
 <style>
-@media screen and (-webkit-min-device-pixel-ratio:1) {
+@media screen and (-webkit-min-device-pixel-ratio: 1) {
   .containWarp {
     background-image: url("/static/imgs/bg_2.jpg") !important;
     background-repeat: no-repeat;
@@ -339,6 +339,22 @@ textarea:-ms-input-placeholder {
   .verifyCodeSpan {
     margin-top: 5px;
     width: 82px;
+  }
+  .nameErrText {
+    color: red;
+    margin-left: -60px;
+  }
+  .mobileErrText {
+    color: red;
+    margin-left: -38px;
+  }
+  .verCodeErrText {
+    color: red;
+    margin-left: -55px;
+  }
+  .enterpriseNameErrText {
+    color: red;
+    margin-left: -40px;
   }
 }
 @media screen and (min-width: 414px) {
@@ -357,7 +373,7 @@ textarea:-ms-input-placeholder {
   .verifyCodeInput {
     border-bottom: 1px solid rgba(50, 80, 80, 1);
     outline: none;
-    width: 50%;
+    width: 48%;
   }
   .infoInputWarp {
     color: rgba(0, 255, 255, 0.8);
@@ -374,6 +390,22 @@ textarea:-ms-input-placeholder {
   .verifyCodeSpan {
     margin-top: 5px;
     width: 82px;
+  }
+  .nameErrText {
+    color: red;
+    margin-left: -60px;
+  }
+  .mobileErrText {
+    color: red;
+    margin-left: -38px;
+  }
+  .verCodeErrText {
+    color: red;
+    margin-left: -55px;
+  }
+  .enterpriseNameErrText {
+    color: red;
+    margin-left: -40px;
   }
 }
 
@@ -393,7 +425,7 @@ textarea:-ms-input-placeholder {
   .verifyCodeInput {
     border-bottom: 1px solid rgba(50, 80, 80, 1);
     outline: none;
-    width: 48%;
+    width: 46%;
   }
   .infoInputWarp {
     color: rgba(0, 255, 255, 0.8);
@@ -410,6 +442,22 @@ textarea:-ms-input-placeholder {
   .verifyCodeSpan {
     margin-top: 5px;
     width: 82px;
+  }
+  .nameErrText {
+    color: red;
+    margin-left: -50px;
+  }
+  .mobileErrText {
+    color: red;
+    margin-left: -28px;
+  }
+  .verCodeErrText {
+    color: red;
+    margin-left: -38px;
+  }
+  .enterpriseNameErrText {
+    color: red;
+    margin-left: -25px;
   }
 }
 
@@ -429,7 +477,7 @@ textarea:-ms-input-placeholder {
   .verifyCodeInput {
     border-bottom: 1px solid rgba(50, 80, 80, 1);
     outline: none;
-    width: 46%;
+    width: 43%;
   }
   .infoInputWarp {
     color: rgba(0, 255, 255, 0.8);
@@ -446,6 +494,22 @@ textarea:-ms-input-placeholder {
   .verifyCodeSpan {
     margin-top: 5px;
     width: 67px;
+  }
+  .nameErrText {
+    color: red;
+    margin-left: -30px;
+  }
+  .mobileErrText {
+    color: red;
+    margin-left: -5px;
+  }
+  .verCodeErrText {
+    color: red;
+    margin-left: -20px;
+  }
+  .enterpriseNameErrText {
+    color: red;
+    margin-left: -5px;
   }
 }
 </style>
