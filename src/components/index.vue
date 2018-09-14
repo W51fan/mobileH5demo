@@ -2,6 +2,7 @@
   <div class="indexbody">
     
     <div v-if="isShowIndex" class="indexWarp">
+      
       <div class="bigTitle">{{ title }}</div>
       <div class="subTitle">{{ subTitle }}</div>
       <div style="font-size: 20pt;font-weight: 400;color: rgb(102, 173, 173);margin-top: 8%;">体验版</div>
@@ -10,6 +11,7 @@
           <span>现在开始</span>
         </div>
       </div>
+      <img src="static/imgs/huazhilogo.png" class="huazhilogo">
     </div>
     
 
@@ -151,7 +153,7 @@ export default {
   font-family: sans-serif;
   cursor: pointer;
   font-weight: 400;
-  margin-top: 20%;
+  margin-top: 10%;
   text-align: center;
   margin-left: 8%;
 }
@@ -169,7 +171,7 @@ export default {
   font-family: sans-serif;
   cursor: pointer;
   font-weight: 400;
-  margin-top: 20%;
+  margin-top: 10%;
   text-align: center;
   margin-left: 8%;
 }
@@ -188,6 +190,9 @@ export default {
     font-weight: 400;
     color: rgba(0, 255, 255, 0.8);
   }
+  .huazhilogo{
+    z-index: 99999;width: 160px;margin-top:20%;
+  }
 }
 @media screen and (min-width: 414px) {
   .bigTitle {
@@ -200,6 +205,9 @@ export default {
     font-size: 40pt;
     font-weight: 400;
     color: rgba(0, 255, 255, 0.8);
+  }
+  .huazhilogo{
+    z-index: 99999;width: 160px;margin-top:20%;
   }
 }
 
@@ -215,6 +223,9 @@ export default {
     font-weight: 400;
     color: rgba(0, 255, 255, 0.8);
   }
+  .huazhilogo{
+    z-index: 99999;width: 160px;margin-top:15%;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -228,6 +239,9 @@ export default {
     font-size: 32pt;
     font-weight: 400;
     color: rgba(0, 255, 255, 0.8);
+  }
+  .huazhilogo{
+    z-index: 99999;width: 120px;margin-top:10%;
   }
 }
 /* .loading-overlay {
