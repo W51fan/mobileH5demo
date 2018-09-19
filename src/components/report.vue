@@ -34,7 +34,7 @@
         <div style="color: rgba(241, 241, 241, 0.6);margin: 10px;">
             <div>更多测评以及更详尽的评测结果请访问</div>
             <div>华制诊断云</div>
-            <div>bianque.ehzcloud.com</div>
+            <div>zhenduan.ehzcloud.com</div>
         </div>
     </div>
 </template>
